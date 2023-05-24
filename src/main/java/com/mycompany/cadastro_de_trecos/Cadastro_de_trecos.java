@@ -7,6 +7,7 @@ public class Cadastro_de_trecos {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        clearScreen();
         mainMenu();
     }
 
@@ -66,6 +67,7 @@ public class Cadastro_de_trecos {
     public static void listOne() {
     }
 
+    // Cadastra um novo treco.
     public static void newThing() {
     }
 
@@ -79,8 +81,9 @@ public class Cadastro_de_trecos {
 
     // Recarrega o menu principal.
     public static void reloadMenu() {
-        System.out.println ("\n\n\n Opção inválida. \n\n\n");
-        mainMenu();
+        clearScreen(); // Limpa o terminal.
+        System.out.println("Opção inválida!\n");
+        mainMenu();    // Mostra o menu.
     }
 
     // Limpa a tela do terminal.
